@@ -2,7 +2,7 @@
 
 FROM ghcr.io/shipwright-io/shipwright-samples/golang:1.18 AS build
 
-COPY main.go .
+COPY . .
 ENV CGO_ENABLED=0
 RUN ls -al .git || echo "Git folder not found"
 
